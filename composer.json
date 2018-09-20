@@ -1,0 +1,27 @@
+{
+  "name": "entanet/pubsub2listener",
+  "description": "PubSub to listener.",
+  "license": "MIT",
+  "homepage": "https://github.com/Entanet/pubsub2listener",
+  "support": {
+    "issues": "https://github.com/Entanet/pubsub2listener/issues",
+    "source": "https://github.com/Entanet/pubsub2listener"
+  },
+  "authors": [
+    {
+      "name": "Tom Lloyd",
+      "email": "tomos.lloyd@enta.net"
+    }
+  ],
+  "require": {
+    "php": ">=7.0",
+    "superbalist/laravel-pubsub": "^3.0",
+    "superbalist/php-pubsub-kafka": "^2.0",
+    "illuminate/events": "^5.7"
+  },
+  "autoload": {
+    "psr-4": {
+      "Entanet\\PubSub2Listener\\": "src/"
+    }
+  }
+}
