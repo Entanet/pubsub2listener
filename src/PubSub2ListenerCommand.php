@@ -49,7 +49,7 @@ class PubSub2ListenerCommand extends Command
     public function handle()
     {
         $this->pubsub->subscribe($this->argument('topic'), function ($message) {
-            Event::dispatch($this->argument('topic'), $message);
+            Event::dispatch($this->argument('topic'), array($message));
         });
     }
 }
